@@ -2,9 +2,8 @@ package Mascotas;
 
 import Mascotas.Animales.*;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Inventario implements MetodosInventario {
     private String nombreTienda;
@@ -69,5 +68,17 @@ public class Inventario implements MetodosInventario {
     }
     public void removeMascota(int indice){
         inventarioAnimales.remove(indice);
+    }
+
+    public void ordenarElementos(){
+       inventarioAnimales.sort(Comparator.comparing(Mascota::getNombre));
+
+
+       /*
+       Ordenado en inverso
+
+      inventarioAnimales.sort(Comparator.comparing(Mascota::getNombre).reversed());
+
+        */
     }
 }

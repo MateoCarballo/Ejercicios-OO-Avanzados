@@ -116,6 +116,7 @@ public class MainMascotas {
                     continuar=false;
                 }
             }
+            miInventario.ordenarElementos();
         }while(continuar);
     }
 }
