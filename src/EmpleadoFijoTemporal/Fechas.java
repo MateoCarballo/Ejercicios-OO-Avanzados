@@ -26,7 +26,7 @@ import java.util.logging.Logger;
  * @author mrnov
  */
 public class Fechas {
-    public static void main(String[] args) throws ParseException {
+    public static void Fechas(String[] args) throws ParseException {
         antes8();
          
         //en8();

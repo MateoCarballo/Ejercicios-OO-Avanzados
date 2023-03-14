@@ -16,6 +16,30 @@ public class EmpFijo extends Empleado{
         this.trienios = trienios;
     }
 
+    public String getSalario() {
+        return salario;
+    }
+
+    public void setSalario(String salario) {
+        this.salario = salario;
+    }
+
+    public float getIrpf() {
+        return irpf;
+    }
+
+    public void setIrpf(float irpf) {
+        this.irpf = irpf;
+    }
+
+    public int getTrienios() {
+        return trienios;
+    }
+
+    public void setTrienios(int trienios) {
+        this.trienios = trienios;
+    }
+
     @Override
     public float sueldo() {
         return 0;

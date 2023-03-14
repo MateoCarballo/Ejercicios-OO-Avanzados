@@ -20,6 +20,38 @@ public class EmpTemporal extends Empleado{
         this.listadoVentas = listadoVentas;
     }
 
+    public String getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(String fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public String getFechaFin() {
+        return fechaFin;
+    }
+
+    public void setFechaFin(String fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+
+    public double getPrecioDia() {
+        return precioDia;
+    }
+
+    public void setPrecioDia(double precioDia) {
+        this.precioDia = precioDia;
+    }
+
+    public ArrayList<Ventas> getListadoVentas() {
+        return listadoVentas;
+    }
+
+    public void setListadoVentas(ArrayList<Ventas> listadoVentas) {
+        this.listadoVentas = listadoVentas;
+    }
+
     @Override
     public float sueldo() {
         return 0;
