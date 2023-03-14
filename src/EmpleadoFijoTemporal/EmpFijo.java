@@ -9,7 +9,7 @@ public class EmpFijo extends Empleado{
     private int trienios;
 
     public EmpFijo(String nss, String nombre,
-                   String fechaDeNacimiento, char sexo, String salario, float irpf, int trienios) {
+                   String fechaDeNacimiento, char sexo, int salario, float irpf, int trienios) {
         super(nss, nombre, fechaDeNacimiento, sexo);
         this.salario = salario;
         this.irpf = irpf;
@@ -43,6 +43,6 @@ public class EmpFijo extends Empleado{
     @Override
     public float sueldo() {
         float sueldo = ((float) salario + (30 * trienios) * (1 - irpf));
-        return 0;
+        return sueldo;
     }
 }
