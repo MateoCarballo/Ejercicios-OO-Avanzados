@@ -57,12 +57,11 @@ public class EmpTemporal extends Empleado{
 
     @Override
     public float sueldo() throws ParseException {
-        float sueldo=0;
-
         SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
         Date f1 =sdf.parse(fechaInicio);
         Date f2 =sdf.parse(fechaFin);
-
+        float dias = (f2.getTime()-f1.getTime()/(1000*60*60*24));
+        float sueldo=0;
         return sueldo;
     }
 }
