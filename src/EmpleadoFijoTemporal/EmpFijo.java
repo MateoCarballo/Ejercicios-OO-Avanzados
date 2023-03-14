@@ -4,20 +4,16 @@ import java.util.ArrayList;
 
 public class EmpFijo extends Empleado{
 
-    private String fechaInicio;
-    private String fechaFin;
-    private double precioDia;
+    private String salario;
+    private float irpf;
+    private int trienios;
 
-    private ArrayList<Ventas> listadoVentas = new ArrayList<>();
-
-    public EmpFijo(String nss, String nombre, String fechaDeNacimiento,
-                   char sexo, String fechaInicio, String fechaFin, double precioDia,
-                   ArrayList<Ventas> listadoVentas) {
+    public EmpFijo(String nss, String nombre,
+                   String fechaDeNacimiento, char sexo, String salario, float irpf, int trienios) {
         super(nss, nombre, fechaDeNacimiento, sexo);
-        this.fechaInicio = fechaInicio;
-        this.fechaFin = fechaFin;
-        this.precioDia = precioDia;
-        this.listadoVentas = listadoVentas;
+        this.salario = salario;
+        this.irpf = irpf;
+        this.trienios = trienios;
     }
 
     @Override
