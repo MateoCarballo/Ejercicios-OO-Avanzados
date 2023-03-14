@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class EmpFijo extends Empleado{
 
-    private String salario;
+    private int salario;
     private float irpf;
     private int trienios;
 
@@ -16,11 +16,11 @@ public class EmpFijo extends Empleado{
         this.trienios = trienios;
     }
 
-    public String getSalario() {
+    public int getSalario() {
         return salario;
     }
 
-    public void setSalario(String salario) {
+    public void setSalario(int salario) {
         this.salario = salario;
     }
 
@@ -42,6 +42,7 @@ public class EmpFijo extends Empleado{
 
     @Override
     public float sueldo() {
+        float sueldo = ((float) salario + (30 * trienios) * (1 - irpf));
         return 0;
     }
 }

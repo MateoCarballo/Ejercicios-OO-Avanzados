@@ -1,5 +1,7 @@
 package EmpleadoFijoTemporal;
 
+import java.text.ParseException;
+
 public abstract class Empleado {
 
     private String nss;
@@ -46,5 +48,5 @@ public abstract class Empleado {
         this.sexo = sexo;
     }
 
-   public abstract float sueldo();
+   public abstract float sueldo() throws ParseException;
 }

@@ -1,6 +1,9 @@
 package EmpleadoFijoTemporal;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class EmpTemporal extends Empleado{
 
@@ -53,7 +56,13 @@ public class EmpTemporal extends Empleado{
     }
 
     @Override
-    public float sueldo() {
-        return 0;
+    public float sueldo() throws ParseException {
+        float sueldo=0;
+
+        SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYYY");
+        Date f1 =sdf.parse(fechaInicio);
+        Date f2 =sdf.parse(fechaFin);
+
+        return sueldo;
     }
 }
