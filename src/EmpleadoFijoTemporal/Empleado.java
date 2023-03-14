@@ -9,6 +9,7 @@ public abstract class Empleado {
     private String fechaDeNacimiento;
     private char sexo;
 
+
     public Empleado(String nss, String nombre, String fechaDeNacimiento, char sexo) {
         this.nss = nss;
         this.nombre = nombre;
