@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class MainMascotas {
     public static void main(String[] args)throws IOException {
+
         boolean continuar=true;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int a = 0;
@@ -30,7 +31,6 @@ public class MainMascotas {
                 "origen", false);
         Mascota loro4 = new Loro("nombre Loro4", 15, "estado", "fechaNacimiento",
                 "origen", false);
-
         Mascota canario = new Canario("nombre Canario", 13, "estado", "fechaNacimiento",
                 "color canario", false);
 
